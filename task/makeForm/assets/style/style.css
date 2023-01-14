@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+}
+
+body {
+    color: yellow;
+    background: url(/assets/img/concert.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1111px;
+    font-family: monospace ;
+    text-align: center;
+
+}
+
+header {
+    background-color: transparent;
+    display: inline;
+    position: fixed;
+top: 0;
+right: 0;
+width: 100%;
+    box-shadow: 0 3px 20px 1px yellow;
+    
+}
+
+section {margin-top: 160px;}
+
+header h1 {
+    margin: 30px 0;
+    text-shadow: 1px 1px 20px whitesmoke;
+    font-size: 4.5 vw;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.inputan {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+hr {
+    width: 70px;
+    align-items: lef;
+}
+
+.inputan input

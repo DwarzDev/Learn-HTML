@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Form Bio</title>
+    <style>
+        *{margin: 0;
+            box-sizing: content-box;}
+        body {
+            background: url(https://images.unsplash.com/photo-1673245183644-c849168db578?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 1000px;
+            text-align: center;
+        
+        }
+        header{
+
+            background-color: rgba(10, 10, 14, 0.322);
+            border-radius: 60px;
+            margin-bottom: 100px;
+        }
+        header a {
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 10px 10px;
+            color: aqua;
+            text-shadow: 0 0 10px blue;
+            font-size: 32px;
+        }
+        main form table tr th {
+            color: rgb(26, 96, 99);
+            font-size: 18px;
+            
+        }
+        main form table{
+            margin: 0 auto;
+            background-color: rgba(201, 198, 198, 0.747);
+            border-radius: 40px ;
+            padding: 60px;
+            height: 940px;
+        }
+
+        main form table tr td input.kolom {
+            padding: 10px;
+            border-radius: 20px;
+            margin-left: 380px;
+        }
+
+        main form table tr th label {
+            margin-left: 50px;
+        }
+
+        main form table tr td #send {
+            padding: 20px 40px;
+            border-radius: 25px;
+            background-color: rgb(8, 80, 76);
+            margin: 0 100px;
+            width: 100%;
+        }
+        #age,#gender,#address {
+            padding: 10px;
+            border-radius: 20px;
+            margin-left: 380px;
+            width: 35%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#send"><h1>Form Biodata</h1></a>
+    </header>
+    <main>
+        <form>
+            <table>
+                <tr>
+                    <th><label for="fname">First Name</label></th>
+                    <td><input type="name" name="fname" id="fname" class="kolom" placeholder="Edward" required></td>
+                </tr>
+                <tr>
+                    <th><label for="lname">Last Name</label></th>
+                    <td><input type="name" name="lname" id="lname" class="kolom" placeholder="Supratman" required></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email</label></th>
+                    <td><input type="email" name="email" id="email" class="kolom" placeholder="zedwar@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <th><label for="status">Status</label></th>
+                    <td><input type="radio" name="status" id="status">Maried</td>
+                    <td><input type="radio" name="status" id="status" checked>Single</td>
+                </tr>
+                <tr>
+                    <th><label for="ffood">Favorite Food</label></th>
+                    <td><input type="checkbox" name="ffood" id="ffood">Rendang</td>
+                    <td><input type="checkbox" name="ffood" id="ffood" checked>Satay</td>
+                    <td><input type="checkbox" name="ffood" id="ffood">Orek Tempe</td>
+                    <td><input type="checkbox" name="ffood" id="ffood">Padang Rice</td>
+                </tr>
+
+                <tr>
+                    <th><label for="fdrink ">Favorite Drink</label></th>
+                    <td><input type="checkbox" name="fdrink" id="fdrink" checked>Boba</td>
+                    <td><input type="checkbox" name="fdrink" id="fdrink">Green Tea</td>
+                    <td><input type="checkbox" name="fdrink" id="fdrink"> Coffee Janji Jiwa</td>
+                    <td><input type="checkbox" name="fdrink" id="fdrink">Mineral Water</td>
+                </tr>
+                <tr>
+                    <th><label for="age">Age</label></th>
+                    <td><input type="number" name="age" id="age" value="19" min="1" max="100" required></td>
+                </tr>
+                <tr>
+                    <th><label for="gender">Gender</label></th>
+                    <td>
+                        <select name="gender" id="gender">
+                            <option value="Male">Male
+                            <option value="Female">Feeeemale
+                            <option value="Other">Other</select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="address">Address</label></th>
+                    <td><textarea name="address" id="address" cols="30" rows="10" placeholder="Masjid An Nadia Pondok IT Pondok Programmer" min="1" max="150" required></textarea></td>
+                </tr>
+                <tr class="sent">
+                    <td><input type="submit" value="Send" id="send"></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+</body>
+</html>
